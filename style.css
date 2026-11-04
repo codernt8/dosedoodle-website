@@ -26,7 +26,8 @@ body {
   color: var(--text);
   font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 620px; margin: 0 auto; padding: 0 20px; }
+p, li, dd { text-wrap: pretty; }
 header.site { padding: 28px 0 8px; }
 header.site a.brand { font-weight: 700; font-size: 20px; color: var(--text); text-decoration: none; }
 header.site nav { float: right; }
