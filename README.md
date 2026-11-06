@@ -1,6 +1,6 @@
 # DoseDoodle website
 
-Support page (`index.html`) and privacy policy (`privacy.html`) for the DoseDoodle iPhone app, live at https://dosedoodle.netlify.app/. Plain static files, no build step, no external fonts, scripts or trackers. Use the Support URL for `/` and the Privacy Policy URL for `/privacy.html` in App Store Connect.
+Support page (`index.html`) and privacy policy (`privacy.html`) for the DoseDoodle iPhone app, live at https://dosedoodle.com/ (the old https://dosedoodle.netlify.app/ address still works). The support address `support@dosedoodle.com` forwards to the DoseDoodle support Gmail inbox through Cloudflare Email Routing. Plain static files, no build step, no external fonts, scripts or trackers. Use the Support URL for `/` and the Privacy Policy URL for `/privacy.html` in App Store Connect.
 
 ## Branches
 
