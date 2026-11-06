@@ -175,6 +175,9 @@ h1.display { font-size: clamp(40px, 8vw, 80px); line-height: 1.04; font-weight: 
 .contact-card { margin-top: 44px; background: var(--band); border-radius: 22px; padding: 30px 28px; }
 .contact-card h3 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.015em; }
 .contact-card p { margin: 0; color: var(--muted); }
+.tip { margin-top: 18px; border: 1px solid var(--line); border-radius: 22px; padding: 26px 28px; }
+.tip h3 { margin: 0 0 6px; font-size: 21px; letter-spacing: -0.015em; }
+.tip p { margin: 0; color: var(--muted); }
 .notice { margin: 40px 0 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
 
 /* Legal / long text pages */
