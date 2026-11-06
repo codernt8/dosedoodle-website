@@ -177,6 +177,9 @@ h1.display { font-size: clamp(40px, 8vw, 80px); line-height: 1.04; font-weight: 
 .contact-card p { margin: 0; color: var(--muted); }
 .tip { display: flex; align-items: center; gap: 20px; margin-top: 18px; border: 1px solid var(--line); border-radius: 22px; padding: 24px 28px; }
 .tip-icon { flex: none; width: 56px; height: 56px; padding: 6px; border-radius: 16px; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--bg)); }
+.tip-icon-link { flex: none; display: block; line-height: 0; border-radius: 16px; transition: transform 0.15s ease; }
+.tip-icon-link:hover { transform: scale(1.06); text-decoration: none; }
+@media (prefers-reduced-motion: reduce) { .tip-icon-link { transition: none; } .tip-icon-link:hover { transform: none; } }
 @media (max-width: 520px) { .tip { flex-direction: column; align-items: flex-start; gap: 14px; padding: 22px; } }
 .tip h3 { margin: 0 0 6px; font-size: 21px; letter-spacing: -0.015em; }
 .tip p { margin: 0; color: var(--muted); }
