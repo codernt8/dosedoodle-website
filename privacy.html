@@ -9,15 +9,23 @@
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="site">
-    <a class="brand" href="/">DoseDoodle</a>
-    <nav><a href="/">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="apple-touch-icon.png" alt="" width="24" height="24">DoseDoodle</a>
+    <ul>
+      <li><a href="/">Overview</a></li>
+      <li><a href="/#support">Support</a></li>
+      <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+    </ul>
+  </div>
+</nav>
 
+<div class="wrap narrow doc">
   <main>
     <h1>Privacy policy</h1>
     <p class="updated">Last updated 4 November 2026</p>
@@ -70,9 +78,13 @@
     <p>Questions about this policy? Email <a href="mailto:DoseDoodleSupport@gmail.com">DoseDoodleSupport@gmail.com</a>.</p>
   </main>
 
-  <footer>
-    <a href="/">Support</a> &middot; &copy; 2026 Timothy Crouch
-  </footer>
 </div>
+
+<footer>
+  <div class="wrap">
+    <div class="links" style="border-top:0;margin-top:0;padding-top:0"><span>&copy; 2026 Timothy Crouch</span><a href="/">DoseDoodle</a><a href="/#support">Support</a></div>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DoseDoodle: medicine reminders and records</title>
-<meta name="description" content="DoseDoodle is an iPhone app that reminds you when to take your medicines and keeps a simple record for you and your doctor.">
+<title>DoseDoodle: medicine reminders and records for iPhone</title>
+<meta name="description" content="DoseDoodle is an iPhone app that reminds you when to take your medicines and keeps a simple record for you and your doctor. Profiles for family and pets. Your records stay on your iPhone.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DoseDoodle">
+<meta property="og:title" content="DoseDoodle: medicine reminders, made simple">
+<meta property="og:description" content="Reminders for your medicines and a simple record for you and your doctor. Profiles for family and pets. Your records stay on your iPhone.">
+<meta property="og:image" content="https://dosedoodle.netlify.app/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
@@ -12,59 +20,224 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="site">
-    <a class="brand" href="/">DoseDoodle</a>
-    <nav><a href="/">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
 
-  <main>
-    <h1>DoseDoodle</h1>
-    <p class="lede">Reminders for your medicines, and a simple record of what you took, for you and your doctor.</p>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="apple-touch-icon.png" alt="" width="24" height="24">DoseDoodle</a>
+    <ul>
+      <li class="hide-sm"><a href="#today">Features</a></li>
+      <li class="hide-sm"><a href="#profiles">Profiles</a></li>
+      <li><a href="#private">Privacy</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="card">
-      <ul>
-        <li>Reminders for each dose, with a follow-up if you miss one.</li>
-        <li>A Today view, a weekly Schedule, and Home Screen and Lock Screen widgets.</li>
-        <li>Profiles for other people and for your pets, each with its own medicines, history and reports.</li>
-        <li>Log doses taken, skipped or taken at another time, and any symptoms you notice.</li>
-        <li>Doctor reports you can share as a PDF or a CSV file.</li>
-        <li>Your records stay on your iPhone. There are no accounts.</li>
+<header class="hero">
+  <div class="wrap">
+    <img class="icon" src="apple-touch-icon.png" alt="DoseDoodle app icon" width="84" height="84">
+    <h1 class="display">Medicine reminders, made simple.</h1>
+    <p class="lede">DoseDoodle reminds you when to take your medicines and keeps a simple record of what you took, for you and your doctor.</p>
+    <!-- When the app is live, replace this pill with the App Store link and badge. -->
+    <span class="pill">Coming soon to iPhone</span>
+    <div class="hero-phone">
+      <div class="phone"><img src="img/today.webp" width="720" height="1564" alt="The Today screen in DoseDoodle, showing one dose taken, Vitamin D3 due now with Take now and Skip buttons, and later doses for midday and evening."></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="band" id="today">
+  <div class="wrap feature">
+    <div class="copy">
+      <p class="eyebrow">Reminders</p>
+      <h2>A calm view of your day.</h2>
+      <p>Today lists every dose in time order. Tap once to take it. If you miss one, DoseDoodle follows up, so a busy morning doesn't turn into a missed dose.</p>
+      <ul class="points">
+        <li>Take, skip or snooze for 15 minutes, straight from the reminder.</li>
+        <li>Took it early, or a different amount? Say so, and the reminders for that dose stop.</li>
+        <li>Note a symptom beside your doses, so the pattern is easy to see later.</li>
       </ul>
     </div>
+    <div class="shot"><div class="phone"><img src="img/today.webp" width="720" height="1564" loading="lazy" alt="DoseDoodle's Today screen with the options Taken at another time and Taken a different amount."></div></div>
+  </div>
+</section>
 
-    <div class="card note">
-      DoseDoodle is a reminder and record-keeping tool. It does not give medical advice. Always follow what your doctor or pharmacist has told you, and read the leaflet that comes with your medicine.
+<section class="band alt" id="schedule">
+  <div class="wrap feature flip">
+    <div class="copy">
+      <p class="eyebrow">Schedule</p>
+      <h2>The whole week, at a glance.</h2>
+      <p>A week strip shows which days you took everything and which you skipped or missed. Below it, the day's doses are listed in time order, with a nudge when it's time to reorder.</p>
+      <ul class="points">
+        <li>Medicines on the schedule that suits them: daily, every few days, on and off cycles, or as needed.</li>
+        <li>Pause a medicine for a few days from the Skip screen.</li>
+      </ul>
+    </div>
+    <div class="shot"><div class="phone"><img src="img/schedule.webp" width="720" height="1564" loading="lazy" alt="The weekly Schedule in DoseDoodle, with a week strip showing taken and skipped days above a list of the day's doses."></div></div>
+  </div>
+</section>
+
+<section class="band" id="medicines">
+  <div class="wrap feature">
+    <div class="copy">
+      <p class="eyebrow">Medicines</p>
+      <h2>Know before you run out.</h2>
+      <p>Each medicine keeps its dose, schedule and supply. DoseDoodle counts the days left and tells you when to reorder.</p>
+      <ul class="points">
+        <li>Add a medicine by pointing the camera at the box, from a photo, or by hand.</li>
+        <li>Tap Look up to see the common side effects from the US FDA drug label, or type your own.</li>
+        <li>Keep the doctor's name, what it is for and an optional picture of the box.</li>
+      </ul>
+    </div>
+    <div class="shot"><div class="phone"><img src="img/medicine.webp" width="720" height="1564" loading="lazy" alt="A medicine's page in DoseDoodle, showing the dose, the supply with days left, a reorder date and the side effects list."></div></div>
+  </div>
+</section>
+
+<section class="band alt" id="profiles">
+  <div class="wrap feature flip">
+    <div class="copy">
+      <p class="eyebrow">Profiles</p>
+      <h2>One app for the whole family. Pets too.</h2>
+      <p>Look after a parent, a partner, a child or the dog. Each profile has its own medicines, history, doctors and reports, and a reminder always says whose medicines it is for.</p>
+      <ul class="points">
+        <li>Switch profiles in one tap from the top of Today.</li>
+        <li>A bar across the screen shows whose medicines you are looking at.</li>
+        <li>Pet profiles use the right words, and reports that suit a vet.</li>
+      </ul>
+    </div>
+    <div class="shots">
+      <div class="phone"><img src="img/profiles.webp" width="720" height="1564" loading="lazy" alt="The Whose medicines screen, listing you, two people and two pets with how many doses each has done today."></div>
+      <div class="phone"><img src="img/pet-today.webp" width="720" height="1564" loading="lazy" alt="A dog's Today screen in DoseDoodle, with the profile bar across the top."></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="reports">
+  <div class="wrap feature">
+    <div class="copy">
+      <p class="eyebrow">Reports</p>
+      <h2>Ready for your next appointment.</h2>
+      <p>Make a clear report for your doctor, pharmacist or vet. It shows which doses you took, which you skipped and why, and the symptoms you noted.</p>
+      <ul class="points">
+        <li>Share it as a PDF, or export a CSV file for a spreadsheet.</li>
+        <li>Choose the medicines and the period, from the last 7 days to chosen dates.</li>
+        <li>Made on your iPhone and sent only where you choose.</li>
+      </ul>
+    </div>
+    <div class="shot"><div class="phone"><img src="img/report.webp" width="720" height="1564" loading="lazy" alt="A doctor report preview in DoseDoodle, with the doses taken for each medicine and the symptoms logged."></div></div>
+  </div>
+</section>
+
+<section class="band alt" id="log">
+  <div class="wrap feature flip">
+    <div class="copy">
+      <p class="eyebrow">Real life</p>
+      <h2>Life isn't always on schedule.</h2>
+      <p>Took your tablet an hour late? Needed an extra dose? Log it at the time and amount it really happened. The history, the report and your supply all use what you actually took.</p>
+      <ul class="points">
+        <li>Log a dose that isn't on the schedule with the + on Today.</li>
+        <li>Step the amount up or down, even for something like 0.1 mL.</li>
+      </ul>
+    </div>
+    <div class="shot"><div class="phone"><img src="img/log-dose.webp" width="720" height="1564" loading="lazy" alt="The When did you take it screen in DoseDoodle, with the time and the amount taken."></div></div>
+  </div>
+</section>
+
+<section class="band" id="more">
+  <div class="wrap">
+    <div class="grid-head"><h2>Everything around it, too.</h2></div>
+    <div class="tiles">
+      <div class="tile"><h3>Widgets</h3><p>Home Screen and Lock Screen widgets show your doses done and the next one, with a Taken button when a dose is due.</p></div>
+      <div class="tile"><h3>Siri and Shortcuts</h3><p>Say "Log my medicines" or ask "What's next".</p></div>
+      <div class="tile"><h3>App lock</h3><p>Ask for Face ID when the app opens, and after the time away that you choose.</p></div>
+      <div class="tile"><h3>Private reminders</h3><p>Hide medicine names in reminders and widgets, so a glance at your phone says nothing.</p></div>
+      <div class="tile"><h3>Calendar</h3><p>If you like, add the next two weeks of doses to a calendar on your iPhone. It is off until you turn it on.</p></div>
+      <div class="tile"><h3>Light and Dark</h3><p>Follows your iPhone's appearance and its text size.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="private">
+  <div class="wrap">
+    <h2>Your records stay on your iPhone.</h2>
+    <p class="sub">Health information is personal. DoseDoodle has no accounts and no servers of its own, so there is nothing for anyone to collect.</p>
+    <div class="facts">
+      <div class="fact"><b>No accounts</b><span>Open the app and start. Nothing to sign up for.</span></div>
+      <div class="fact"><b>No ads, no tracking</b><span>No analytics, no advertising identifiers and no third-party code.</span></div>
+      <div class="fact"><b>One thing goes online</b><span>A medicine name, and only when you tap Look up for side effects.</span></div>
+    </div>
+    <a href="privacy.html">Read the privacy policy</a>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap narrow">
+    <h2>Support</h2>
+    <p class="intro">Questions, problems or ideas? Email <a href="mailto:DoseDoodleSupport@gmail.com">DoseDoodleSupport@gmail.com</a>. Please say which iPhone and iOS version you use, and what you were doing when it went wrong.</p>
+
+    <h3 class="eyebrow" style="margin-bottom:12px">Common questions</h3>
+    <div class="faq">
+      <details>
+        <summary>I'm not getting reminders.</summary>
+        <div class="answer"><p>Open the iPhone Settings app, choose DoseDoodle, then Notifications, and make sure Allow Notifications is on. If you use a Focus, allow DoseDoodle in that Focus, or turn on Time Sensitive notifications so dose reminders can come through.</p></div>
+      </details>
+      <details>
+        <summary>Can I keep track of someone else's medicines, or my pet's?</summary>
+        <div class="answer"><p>Yes. Tap your profile picture at the top of the Today screen, then Add a profile, and choose Another person or A pet. Each profile keeps its own medicines, history and reports, and reminders say whose medicines they are for. A bar at the top of the screen shows whose medicines you are looking at whenever it is not your own.</p></div>
+      </details>
+      <details>
+        <summary>Where is my data stored?</summary>
+        <div class="answer"><p>On your iPhone only. DoseDoodle has no accounts and no servers of its own. If you delete the app, its records are deleted with it, unless you have exported them. Your own iPhone backup may include them.</p></div>
+      </details>
+      <details>
+        <summary>What does "Look up" send over the internet?</summary>
+        <div class="answer"><p>Only the medicine name, and only when you tap Look up to find the common side effects on the US FDA's public drug label data. Nothing else leaves your phone. See the <a href="privacy.html">privacy policy</a> for details.</p></div>
+      </details>
+      <details>
+        <summary>How do I get my records to my doctor?</summary>
+        <div class="answer"><p>Use Doctor report in the app. Choose the medicines and the period, then share the PDF, or export a CSV file.</p></div>
+      </details>
+      <details>
+        <summary>I took a dose early or at a different time.</summary>
+        <div class="answer"><p>On the dose's card choose "Taken at another time", and the reminders for that dose will stop. If you took a different amount, choose "Taken a different amount".</p></div>
+      </details>
+      <details>
+        <summary>How do I add the widgets?</summary>
+        <div class="answer"><p>On the Home Screen, touch and hold an empty spot, tap the + button, and search for DoseDoodle. For the Lock Screen, touch and hold the Lock Screen, choose Customise, and add a DoseDoodle widget. The widgets show the owner profile's doses.</p></div>
+      </details>
+      <details>
+        <summary>Can I lock the app with Face ID?</summary>
+        <div class="answer"><p>Yes. In DoseDoodle, open Settings, then App lock, and turn on Require Face ID. You choose how long the app can be left before it locks again.</p></div>
+      </details>
+      <details>
+        <summary>Can I stop names showing on my Lock Screen?</summary>
+        <div class="answer"><p>Yes. Turn on Hide medicine names in Settings. Reminders and widgets then leave the names out.</p></div>
+      </details>
+      <details>
+        <summary>Can I see my doses in my calendar?</summary>
+        <div class="answer"><p>Yes. In Settings, choose Calendar to add the next two weeks of doses to a calendar on your iPhone. It is off until you turn it on.</p></div>
+      </details>
     </div>
 
-    <h2>Support</h2>
-    <p>Questions, problems or ideas? Email <a href="mailto:DoseDoodleSupport@gmail.com">DoseDoodleSupport@gmail.com</a>. Please say which iPhone and iOS version you use, and what you were doing when it went wrong.</p>
+    <div class="contact-card">
+      <h3>Still stuck?</h3>
+      <p>Write to <a href="mailto:DoseDoodleSupport@gmail.com">DoseDoodleSupport@gmail.com</a> and I'll help.</p>
+    </div>
 
-    <h2>Common questions</h2>
-    <dl>
-      <dt>I'm not getting reminders.</dt>
-      <dd>Open the iPhone Settings app, choose DoseDoodle, then Notifications, and make sure Allow Notifications is on. If you use a Focus, allow DoseDoodle in that Focus, or turn on Time Sensitive notifications so dose reminders can come through.</dd>
+    <p class="notice">DoseDoodle is a reminder and record-keeping tool. It does not give medical advice. Always follow what your doctor or pharmacist has told you, and read the leaflet that comes with your medicine. Side effect information comes from US FDA drug labels, is not a full list and is not endorsed by the FDA.</p>
+  </div>
+</section>
 
-      <dt>Can I keep track of someone else's medicines, or my pet's?</dt>
-      <dd>Yes. Tap your profile picture at the top of the Today screen, then Add a profile, and choose Another person or A pet. Each profile keeps its own medicines, history and reports, and reminders say whose medicines they are for. A bar at the top of the screen shows whose medicines you are looking at whenever it is not your own.</dd>
+</main>
 
-      <dt>Where is my data stored?</dt>
-      <dd>On your iPhone only. DoseDoodle has no accounts and no servers of its own. If you delete the app, its records are deleted with it, unless you have exported them. Your own iPhone backup may include them.</dd>
+<footer>
+  <div class="wrap">
+    <p>DoseDoodle is for iPhone. iPhone, Siri and Face ID are trademarks of Apple Inc.</p>
+    <div class="links"><span>&copy; 2026 Timothy Crouch</span><a href="privacy.html">Privacy policy</a><a href="#support">Support</a></div>
+  </div>
+</footer>
 
-      <dt>What does "Look up" send over the internet?</dt>
-      <dd>Only the medicine name, and only when you tap Look up to find the common side effects on the US FDA's public drug label data. Nothing else leaves your phone. See the <a href="privacy.html">privacy policy</a> for details.</dd>
-
-      <dt>How do I get my records to my doctor?</dt>
-      <dd>Use Doctor report in the app. Choose the medicines and the period, then share the PDF, or export a CSV file.</dd>
-
-      <dt>I took a dose early or at a different time.</dt>
-      <dd>On the dose's card choose "Taken at another time", and the reminders for that dose will stop.</dd>
-    </dl>
-  </main>
-
-  <footer>
-    <a href="privacy.html">Privacy policy</a> &middot; &copy; 2026 Timothy Crouch
-  </footer>
-</div>
 </body>
 </html>
