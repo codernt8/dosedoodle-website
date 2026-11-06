@@ -150,6 +150,12 @@ h1.display { font-size: clamp(40px, 8vw, 80px); line-height: 1.04; font-weight: 
 .support { padding: 96px 0 40px; }
 .support h2 { font-size: clamp(32px, 5vw, 52px); line-height: 1.08; font-weight: 700; letter-spacing: -0.026em; margin: 0 0 14px; }
 .support .intro { font-size: 19px; color: var(--muted); margin: 0 0 36px; max-width: 34em; }
+.faq-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.faq-head .eyebrow { margin: 0; }
+.faq-toggle { font: inherit; font-size: 15px; color: var(--accent); background: none; border: 0; padding: 6px 0; cursor: pointer; }
+.faq-toggle:hover { text-decoration: underline; }
+.faq-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.faq-toggle[hidden] { display: none; }
 .faq { border-top: 1px solid var(--line); }
 .faq details { border-bottom: 1px solid var(--line); }
 .faq summary {

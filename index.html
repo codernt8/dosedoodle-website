@@ -177,8 +177,12 @@
     <h2>Support</h2>
     <p class="intro">Questions, problems or ideas? Email <a href="mailto:DoseDoodleSupport@gmail.com">DoseDoodleSupport@gmail.com</a>. Please say which iPhone and iOS version you use, and what you were doing when it went wrong.</p>
 
-    <h3 class="eyebrow" style="margin-bottom:12px">Common questions</h3>
-    <div class="faq">
+    <div class="faq-head">
+      <h3 class="eyebrow">Common questions</h3>
+      <!-- Shown by the small script at the bottom of the page; without scripts each question still opens on its own. -->
+      <button type="button" class="faq-toggle" id="faq-toggle" aria-controls="faq" hidden>Expand all</button>
+    </div>
+    <div class="faq" id="faq">
       <details>
         <summary>I'm not getting reminders.</summary>
         <div class="answer"><p>Open the iPhone Settings app, choose DoseDoodle, then Notifications, and make sure Allow Notifications is on. If you use a Focus, allow DoseDoodle in that Focus, or turn on Time Sensitive notifications so dose reminders can come through.</p></div>
@@ -238,6 +242,27 @@
     <div class="links"><span>&copy; 2026 Timothy Crouch</span><a href="privacy.html">Privacy policy</a><a href="#support">Support</a></div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('faq-toggle');
+  var items = document.querySelectorAll('#faq details');
+  if (!btn || !items.length) return;
+  function allOpen() {
+    for (var i = 0; i < items.length; i++) { if (!items[i].open) return false; }
+    return true;
+  }
+  function label() { btn.textContent = allOpen() ? 'Collapse all' : 'Expand all'; }
+  btn.addEventListener('click', function () {
+    var open = !allOpen();
+    for (var i = 0; i < items.length; i++) { items[i].open = open; }
+    label();
+  });
+  for (var i = 0; i < items.length; i++) { items[i].addEventListener('toggle', label); }
+  label();
+  btn.hidden = false;
+})();
+</script>
 
 </body>
 </html>
