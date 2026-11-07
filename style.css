@@ -109,7 +109,7 @@ h1.display { font-size: clamp(40px, 8vw, 80px); line-height: 1.04; font-weight: 
 .feature .copy p strong { color: var(--text); font-weight: 600; }
 .feature .copy p.eyebrow { font-size: 17px; font-weight: 600; color: var(--accent); margin: 0 0 10px; letter-spacing: -0.005em; }
 .feature .shot { width: min(300px, 70vw); margin: 0 auto; }
-.feature .shots { display: flex; gap: 22px; justify-content: center; }
+.feature .shots { display: flex; gap: 22px; justify-content: center; align-items: flex-start; }
 .feature .shots .phone { width: min(230px, 40vw); }
 .feature .shots .phone + .phone { margin-top: 56px; }
 @media (min-width: 820px) {
